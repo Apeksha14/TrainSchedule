@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+
+    <title>TRAINS!! TRAINS!!</title>
+    <link type="text/image" rel="icon" href="https://s-media-cache-ak0.pinimg.com/originals/a8/92/eb/a892eb8185c79605602606c6d280fce8.gif" />
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Anton|Bree+Serif" rel="stylesheet">
+    <!-- Custom stylesheet -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+  </head>
+  <body>
+  
+  <div class="container">  <!-- title container -->
+    
+    <div class="row">  <!-- top row -->
+       
+        <div class="jumbotron header">
+          
+          <div class="page-header mainhead">
+          
+            <span>
+              <img class="img-circle" id="logo" src="https://3dfoodprintingconference.com/wp-content/uploads/2016/02/Train-Icon.png">
+              <h1>TRAIN SCHEDULES</h1>
+            </span>
+
+            <div class="wrapper">
+              <div class="train"></div>
+              <div class="rails"></div>
+              <div class="background"></div>
+            </div>
+
+          </div>  <!-- end page-header -->
+
+        </div> <!-- end jumbotron -->
+     
+     </div>  <!-- end top row -->
+  
+  </div> <!-- end title container -->
+  
+  <div class="container" id="results"> <!-- result container -->
+      
+    <div class="panel panel-primary resultcont">
+        
+      <div class="panel-heading heading">Current Train Schedule <span id="clockbox"></span></div>
+
+        <div class="panel-body table-responsive" id="results-panel">
+          
+          <!-- Result Table-->
+          <table class="table table-bordered table-striped"> 
+
+            <thead>
+              <th>#Train Name</th>
+              <th>#Destination</th>
+              <th>#Frequency(min)</th>
+              <th>#Next Arrival</th>
+              <th>#Minutes Away</th>
+            </thead>
+
+          </table>
+
+        </div>
+        
+      </div>
+
+    </div> <!-- end panel -->
+  
+  </div>  <!-- end result container -->
+
+  <div class="container" id="results"> <!-- Train information container start -->
+
+    <div class="panel panel-primary resultcont" id="search">
+      
+      <div class="panel-heading heading">Add Train Information</div> 
+        
+        <div class="panel-body panel-form">  <!-- start panel-form -->
+  
+          <form id="myform"> <!-- Form start -->
+  
+            <div class="question">
+              
+              <label>Train Name</label>
+              <input type="text" class="form-control" name="term" id="trainName" required="">
+    
+            </div><br>
+
+            <div class="question">
+              
+              <label>Destination</label>
+              <input type="text" class="form-control" name="term" id="dest" required>
+    
+            </div><br>
+  
+            <div class="question">
+              
+              <label>First Train Time(hh:mm)</label>
+              <input type="text" class="form-control" name="term" id="trainTime" required>
+    
+            </div><br>
+  
+            <div class="question">
+
+              <label>Frequency(mins)</label>
+              <input type="text" class="form-control" id="frequency" required>
+    
+            </div>
+  
+            <button id="add-submit">Submit</button>
+            <button id="clear">Clear</button>
+          
+          </form> <!-- End form -->
+        
+        </div> <!-- End panel-form -->
+
+    </div>
+
+  </div> <!-- Train information container end -->
+
+  <!-- Firebase script -->
+  <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <!-- Moment js CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
+  <!-- Logic Js -->
+  <script src="assets/javascript/logic.js"></script>
+
+</body>
+</html>
