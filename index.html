@@ -13,7 +13,7 @@
 
   </head>
   <body>
-  
+
   <div class="container">  <!-- title container -->
     
     <div class="row">  <!-- top row -->
@@ -23,18 +23,12 @@
           <div class="page-header mainhead">
           
             <span>
-              <img class="img-circle" id="logo" src="https://3dfoodprintingconference.com/wp-content/uploads/2016/02/Train-Icon.png">
-              <h1>TRAIN SCHEDULES</h1>
-            </span>
-
-            <div class="wrapper">
-              <div class="train"></div>
-              <div class="rails"></div>
-              <div class="background"></div>
-            </div>
+              <img class="img-circle" id="logo" src="https://lh4.ggpht.com/NkIOq_1dqeUV1Wewhe_PTOvOaXrD0N7GCUKBnQCBPwpw8Ieh75RTux34louI7LBDTQ=w300">
+              <h1>TRAIN SCHEDULE</h1>
+             </span>
 
           </div>  <!-- end page-header -->
-
+        <h3>Boston - Chicago - Philadelphia - Washington</h3>
         </div> <!-- end jumbotron -->
      
      </div>  <!-- end top row -->
@@ -50,17 +44,26 @@
         <div class="panel-body table-responsive" id="results-panel">
           
           <!-- Result Table-->
-          <table class="table table-bordered table-striped"> 
+          <div class="table-responsive">
+
+          <table class="table table-bordered table-striped" id="myTable"> 
 
             <thead>
-              <th>#Train Name</th>
-              <th>#Destination</th>
-              <th>#Frequency(min)</th>
-              <th>#Next Arrival</th>
-              <th>#Minutes Away</th>
+              <th>Train Name</th>
+              <th>Destination</th>
+              <th>Frequency(mins)</th>
+              <th>Next Arrival</th>
+              <th>Minutes Away</th>
+              <th>Update</th>
+              <th>Remove</th>
             </thead>
+            <tbody>
+
+            </tbody>
 
           </table>
+
+          </div>
 
         </div>
         
@@ -118,6 +121,7 @@
     </div>
 
   </div> <!-- Train information container end -->
+
 
   <!-- Firebase script -->
   <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
